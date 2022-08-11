@@ -17,8 +17,9 @@ hr{
     width:25%;
     position: relative;
     left:37%;
-    bottom:740px;
+    bottom:710px;
 }
+
 .logo{
     position: relative;
     bottom:680px;
@@ -32,7 +33,7 @@ hr{
  list-style-type:none;
  justify-content: flex-end;
  position: relative;
- bottom: 760px;
+ bottom: 730px;
  margin-right: 78px;
  
 }
@@ -85,7 +86,7 @@ h1.ing{
     flex-direction: column;
     position: relative;
     left:93%;
-    bottom:1120px;
+    bottom:1090px;
 
 }
 .icons i{
@@ -163,7 +164,7 @@ svg{
     background-color:black;
     position: relative;
     top: 30px;
-    left: -65px;
+    left: -67px;
     right:40px;
     margin-bottom: 55px;
 }
