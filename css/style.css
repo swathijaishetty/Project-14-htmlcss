@@ -7,16 +7,20 @@
 }
 body{
     font-family: "Poppins";
-    overflow: hidden;  
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
-.mainimg img{
-    height:100vh;
-    width:35%;
+.girl{
+    height:100vh; 
+    /* width:35%; */
+    width:550px;
+    
 }
 hr{
-    width:25%;
+
+    width:350px;
     position: relative;
-    left:37%;
+    left:580px;
     bottom:710px;
 }
 
@@ -33,12 +37,12 @@ hr{
  list-style-type:none;
  justify-content: flex-end;
  position: relative;
- bottom: 730px;
- margin-right: 78px;
+ bottom: 720px;
+ margin-right: 138px;
  
 }
 .list-item{
-    margin-left: 70px;
+    margin-left: 50px;
     color: grey;
 }
 .list-item:first-child{
@@ -46,14 +50,14 @@ hr{
 }
 h1{
     position: relative;
-    left:40%;
+    left:600px;
     bottom:720px;
 }
 
 .main p{
     width:100px;
     position: relative;
-    left:74%;
+    left:1100px;
     bottom:800px;
     font-size: 23px;
 }
@@ -78,14 +82,14 @@ h1.ing{
 }
 .learn{
     position: relative;
-    left:72%;
+    left:1080px;
     bottom:760px;
 }
 .icons{
     display: flex;
     flex-direction: column;
     position: relative;
-    left:93%;
+    left:1350px;
     bottom:1090px;
 
 }
@@ -94,9 +98,11 @@ h1.ing{
 }
 .litems{
     position: relative;
-    left:43%;
+    /* left:43%; */
+    left: 660px;
     bottom:1300px;
     list-style-type: none;
+    z-index: 0;
 }
 .li{
     margin-top: 35px;
@@ -110,7 +116,7 @@ h1.ing{
 }
 .quotes{
     position: relative;
-    left:60%;
+    left:930px;
     bottom:1280px;
 }
 .down{
@@ -119,7 +125,7 @@ h1.ing{
 }
 .para{
     position: relative;
-    left:60%;
+    left:920px;
     bottom:1270px;
     width:350px;
     font-size: 15px;
@@ -127,13 +133,13 @@ h1.ing{
 .dance img{
     height:30vh;
     position: relative;
-    left:60%;
+    left:920px;
     bottom:1260px;
 }
 .arrow{
     position: relative;
-    left:95%;
-    bottom:1500px;
+    left:1340px;
+    bottom:2000px;
 }
 
 svg{
@@ -155,6 +161,7 @@ svg{
     left: -65px;
     right:40px;
     margin-bottom: 55px;
+    z-index: 0;
 }
 
 .litems>div:first-child{
@@ -176,14 +183,226 @@ svg{
     position:relative;
     bottom: 1000px;
     left: 600px;
+    z-index: -1;
 }
-.arrow {
+/* .arrow {
     position: absolute;
     top: 550px;
     right: -140px;
-}
+} */
 .arrow > img {
     width: 30px;
 }
 
+.mainimg{
+    width:500px;
+}
 
+@media screen and (max-width:1400px){
+    .list{
+        position: relative;
+        left: -100px;
+    }
+    hr {
+        display: none;
+    }
+    .icons {
+        position: relative;
+        left:1090px;
+        bottom:1110px;
+    }
+    .learn{
+        position: relative;
+        left:980px;
+        bottom:780px;
+    }
+    .arrow{
+        position: relative;
+        left:1100px;
+        bottom:2000px;
+    }
+    .down{
+        position: relative;
+        bottom:600px;
+        right: 200px;
+    }
+    .main {
+        position: relative;
+        right: 140px;
+    }
+    .girlimg img{
+       width: 380px;
+    }
+    .litems{
+        position: relative;
+        left: 500px;
+    }
+    .line 
+{
+    position:relative;
+    left: 440px;  
+}
+}
+@media screen and (max-width:1200px){
+    .icons {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left:600px;
+        bottom:1040px;
+        height:250px;
+        width: 220px;
+        justify-content:space-between;
+    }
+    .girlimg img{
+        width: 300px;
+     }
+    .arrow{
+        display: none;
+    }
+    .main {
+        position: relative;
+        right: 280px;
+    }
+    .main h1{
+        font-size: 90px;
+    }
+    .main p{
+        font-size: 18px;
+        position: relative;
+        left:1050px;
+    }
+    .main button {
+        font-size: 10px;
+       width: 150px;
+    }
+    .litems{
+        position: relative;
+        left: 400px;
+    }
+    .line 
+{
+    position:relative;
+    left: 340px;  
+}
+.down{
+    position: relative;
+    right: 380px;
+}
+
+  
+}
+@media screen and (max-width:900px) {
+    .list {
+        display: none;
+    }
+    .learn{
+        position: relative;
+        left:750px;
+        bottom:780px;
+    }
+    .icons{
+        position: relative;
+        left:400px;
+        bottom:1050px;
+        width: 250px;
+    }
+    .girlimg img{
+        width: 250px;
+     }
+     .main {
+        position: relative;
+        right: 340px;
+    }
+    .down{
+        position: relative;
+        right: 450px;
+    }
+    .litems{
+        position: relative;
+        left: 340px;
+    }
+    .line 
+{
+    position:relative;
+    left: 280px;  
+}
+.main h1{
+    font-size: 70px;
+}
+.ing{
+    position: relative;
+    left: 530px;
+    padding-top: 20px;
+}
+.main p {
+    
+    position: relative;
+    left:930px;
+}
+.dance img{
+    width: 220px;
+}
+.down p {
+    font-size: 12px;
+    width: 200px;
+}
+}
+@media screen and (max-width:700px){
+    .icons {
+        display: none;
+    }
+    .girl{
+        height:50vh;
+        /* width:35%; */
+       
+    }
+    .girlimg img {
+        width: 250px;
+    }
+    .main button {
+        font-size: 10px;
+       width: 150px;
+    }
+    .down{
+        position: relative;
+        bottom:-100px;
+        right: 650px;   
+    }
+    .line{
+        position:relative;
+    bottom: 300px;
+    left: 40px;
+    }
+    .litems{
+        position: relative;
+        bottom: 600px;
+        left: 100px;
+    }
+    .main{
+        position: relative;
+        bottom: -350px;
+        right: 340px;
+    }
+    .main h1{
+        font-size: 50px;
+        padding-bottom: 30px;
+    }
+    .ing{
+        position: relative;
+        left: 510px;
+    }
+    .main p {
+        font-size: 15px;
+        position: relative;
+        bottom: 750px;
+        left: 720px;
+    }
+    .learn{
+        position: relative;
+        left: 600px;
+        bottom: 740px;
+    }
+ 
+  
+}
